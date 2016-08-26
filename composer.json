@@ -1,0 +1,38 @@
+{
+    "name": "mashbo/mashbot-host-security-taskrunner-extension",
+    "description": "Provide integration into OS-level host security features, like OSX Keychain",
+    "require": {
+        "mashbo/mashbot-taskrunner": "*@dev",
+        "symfony/process": "~3.0",
+        "mashbo/mashbot-process-taskrunner-extension": "*@dev",
+        "mashbo/mashbot-ssh-taskrunner-extension": "*@dev"
+    },
+    "suggest": {
+        "psr/log": "Add extra logging information"
+    },
+    "autoload": {
+        "psr-4": {
+            "Mashbo\\Mashbot\\Extensions\\HostSecurityTaskRunnerExtension\\": "src/",
+            "Mashbo\\Mashbot\\Extensions\\HostSecurityTaskRunnerExtension\\Tests\\": "tests/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Adam Quaile",
+            "email": "aquaile@mashbo.com"
+        }
+    ],
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "git@github.com:Mashbo/mashbot-taskrunner.git"
+        },
+        {
+            "type": "vcs",
+            "url": "ssh://git@gitlab.mashbo.com:5339/mashbot/process-taskrunner-extension.git"
+        }
+    ],
+    "require-dev": {
+        "phpunit/phpunit": "~5.3"
+    }
+}
