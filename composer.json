@@ -4,8 +4,7 @@
     "require": {
         "mashbo/mashbot-taskrunner": "*@dev",
         "symfony/process": "~3.0",
-        "mashbo/mashbot-process-taskrunner-extension": "*@dev",
-        "mashbo/mashbot-ssh-taskrunner-extension": "*@dev"
+        "mashbo/mashbot-process-taskrunner-extension": "*@dev"
     },
     "suggest": {
         "psr/log": "Add extra logging information"
